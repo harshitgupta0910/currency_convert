@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="currency.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency_Convertor</title>
+    <style>
+      body {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background-color: #121212; /* Dark theme background color */
+      }
+
+      body::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('https://picsum.photos/1920/1080');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        opacity: 0.6; /* Opacity to make the image darker */
+        z-index: -1;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5); /* Dark transparent overlay */
+        z-index: -1; /* Ensures the overlay is behind the content */
+      }
+
+      .container {
+        position: relative;
+        z-index: 1;
+        color: white; /* To make sure the text is readable */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
